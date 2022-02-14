@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteActivity"
+    android:background="#FFDE66">
+
+    <android.widget.Button
+        android:id="@+id/btnVolumeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/up_button_shape"
+        android:text="Volume▲"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btnPitchUp"
+        app:layout_constraintStart_toEndOf="@+id/btnTempoUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu" />
+
+    <android.widget.Button
+        android:id="@+id/btnVolumeDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/down_button_shape"
+        android:text="Volume▼"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btnPitchDown"
+        app:layout_constraintStart_toEndOf="@+id/btnTempoDown"
+        app:layout_constraintTop_toBottomOf="@+id/btnTempoUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnPitchUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/up_button_shape"
+        android:text="Pitch▲"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelResv" />
+
+    <android.widget.Button
+        android:id="@+id/btnPitchDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/down_button_shape"
+        android:text="Pitch▼"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTempoUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnChkResv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="예약확인"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="메뉴"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelResv"
+        app:layout_constraintStart_toEndOf="@+id/btnChkResv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnCancelResv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="예약취소"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnTempoUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/up_button_shape"
+        android:text="Tempo▲"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu" />
+
+    <android.widget.Button
+        android:id="@+id/btnTempoDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/down_button_shape"
+        android:text="Tempo▼"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTempoUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/center_button_shape"
+        android:text="재생"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/move_up_button_shape"
+        android:text="▲"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolumeDown" />
+
+
+    <android.widget.Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="취소"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolumeDown" />
+
+    <android.widget.Button
+        android:id="@+id/btnResvPrior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="우선예약"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnReserve"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolumeDown" />
+
+    <android.widget.Button
+        android:id="@+id/btnReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/normal_button_shape"
+        android:text="예약"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolumeDown" />
+
+    <android.widget.Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_button_shape"
+        android:text="▶"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_button_shape"
+        android:text="◀"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+    <android.widget.Button
+        android:id="@+id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/move_down_button_shape"
+        android:text="▼"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text="" />
+
+        <android.widget.Button
+            android:id="@+id/btnsearch"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:text="검색" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
